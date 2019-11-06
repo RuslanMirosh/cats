@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CatsTableViewCell" rowHeight="196" id="KGk-i7-Jjw" customClass="CatsTableViewCell" customModule="Cats" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="196"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="195.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIz-xr-OKg">
+                        <rect key="frame" x="0.0" y="10" width="363" height="175.5"/>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="W6b-7l-jCG">
+                        <rect key="frame" x="171" y="87" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W6b-7l-jCG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NWt-Xe-XQD"/>
+                    <constraint firstAttribute="trailing" secondItem="DIz-xr-OKg" secondAttribute="trailing" id="Wui-4d-tKr"/>
+                    <constraint firstItem="DIz-xr-OKg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="YPF-z7-D7O"/>
+                    <constraint firstItem="DIz-xr-OKg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="frN-jE-4Mf"/>
+                    <constraint firstAttribute="bottom" secondItem="DIz-xr-OKg" secondAttribute="bottom" constant="10" id="vXh-qC-VRv"/>
+                    <constraint firstItem="W6b-7l-jCG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xCx-g7-Tbe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="catImageView" destination="DIz-xr-OKg" id="2yf-Hy-GNP"/>
+                <outlet property="indicator" destination="W6b-7l-jCG" id="P0U-2J-s89"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="147.99107142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
